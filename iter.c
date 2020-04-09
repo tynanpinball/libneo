@@ -27,34 +27,23 @@
  *
  * ABSTRACT
  */
-typedef struct	{
-	int	rows;
-	int	columns;
-	double	*values;
-} matrix_t;
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <math.h>
 
-#define MAT_CELL(mp, r, c)	((mp)->values[(r) * (mp)->columns + (c)])
+#include "neo.h"
 
 /*
- * Prototypes...
+ *
  */
-matrix_t	*mat_alloc(int, int);
-matrix_t	*mat_calloc(int, int, double);
-int			mat_set_value(matrix_t *, double);
-int			mat_load_from_csv(matrix_t *, char *, double, double);
-double		mat_mean(matrix_t *);
-double		mat_stddev(matrix_t *);
-void		mat_normalize(matrix_t *, double, double);
-int			mat_set_array(matrix_t *, double *);
-matrix_t	*mat_identity(int);
-int			mat_add(matrix_t *, matrix_t *);
-int			mat_scalar_add(matrix_t *, double);
-int			mat_subtract(matrix_t *, matrix_t *);
-int			mat_scalar_subtract(matrix_t *, double);
-int			mat_scalar_multiply(matrix_t *, double);
-matrix_t	*mat_multiply(matrix_t *, matrix_t *);
-matrix_t	*mat_transpose(matrix_t *);
-void		mat_iterate(matrix_t *, double (*)(matrix_t *, int, int, double));
-void		mat_dump(matrix_t *, char *);
-void		mat_short_dump(matrix_t *, char *);
-void		mat_free(matrix_t *);
+void
+mat_iterate(matrix_t *mp, double (*ifunc)(matrix_t *, int, int, double))
+{
+	int r, c;
+	double *dp;
+
+	for (r = 0, dp = mp->values; r < mp->rows; r++)
+		for (c = 0; c < mp->columns; c++, dp++)
+			*dp = ifunc(mp, r, c, *dp);
+}

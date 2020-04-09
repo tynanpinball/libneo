@@ -39,6 +39,7 @@ SRCS=	alloc.c \
 		mult.c \
 		transpose.c \
 		csv.c \
+		iter.c \
 		dump.c
 OBJS=	$(SRCS:.c=.o)
 LIB=	libneo.a

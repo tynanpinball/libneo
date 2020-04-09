@@ -37,15 +37,24 @@
  *
  */
 void
+mat_short_dump(matrix_t *mp, char *comment)
+{
+	if (comment != NULL)
+		printf(">> %s (%d X %d)\n", comment, mp->rows, mp->columns);
+	else
+		printf(">> Matrix %d X %d\n", mp->rows, mp->columns);
+}
+
+/*
+ *
+ */
+void
 mat_dump(matrix_t *mp, char *comment)
 {
 	int r, c;
 	double *dp = mp->values;
 
-	if (comment != NULL)
-		printf(">> %s (%d X %d):\n", comment, mp->rows, mp->columns);
-	else
-		printf(">> Matrix %d X %d:\n", mp->rows, mp->columns);
+	mat_short_dump(mp, comment);
 	for (r = 0; r < mp->rows; r++) {
 		putchar('|');
 		for (c = 0; c < mp->columns; c++)
