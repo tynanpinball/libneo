@@ -1,28 +1,29 @@
 #
-# Copyright (c) 2020, Tynan Pinball Limited.  All rights reserved.
-# Unpublished rights reserved under the copyright laws of the United
-# States and/or the Republic of Ireland.
+# Copyright (c) 2020, Tynan Pinball Limited.  All rights reserved.  This is
+# free software; you can redistribute it and/or modify it under the terms
+# of the GNU General Public License as published by the Free Software
+# Foundation; either version 2, or (at your option) any later version.
 #
-# The software contained herein is proprietary to and embodies the
-# confidential technology of Tynan Pinball Limited.  Possession, use,
-# duplication or dissemination of the software and media is authorized
-# only pursuant to a valid written license from Tynan Pinball Limited.
+# It is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+# for more details.
 #
-# RESTRICTED RIGHTS LEGEND   Use, duplication, or disclosure by the U.S.
-# Government is subject to restrictions as set forth in Subparagraph
-# (c)(1)(ii) of DFARS 252.227-7013, or in FAR 52.227-19, as applicable.
+# You should have received a copy of the GNU General Public License along
+# with this product; see the file COPYING.  If not, write to the Free
+# Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 # THIS SOFTWARE IS PROVIDED BY TYNAN PINBALL LIMITED "AS IS" AND ANY
 # EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL TYNAN PINBALL LIMITED
-# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
-# OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
-# OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-# EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL TYNAN PINBALL LIMITED BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+# THE POSSIBILITY OF SUCH DAMAGE.
 #
 AR=	/usr/bin/ar
 RANLIB=	/usr/bin/ranlib
